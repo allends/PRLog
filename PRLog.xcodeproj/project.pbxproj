@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,13 @@
 		0C3B4C9F257161D600371C51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C3B4C9E257161D600371C51 /* Preview Assets.xcassets */; };
 		0C3B4CAA257161D600371C51 /* PRLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3B4CA9257161D600371C51 /* PRLogTests.swift */; };
 		0C3B4CB5257161D600371C51 /* PRLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3B4CB4257161D600371C51 /* PRLogUITests.swift */; };
+		0C3B4CC7257161E500371C51 /* PRLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C3B4CC5257161E500371C51 /* PRLog.xcdatamodeld */; };
+		0C3B4CCC2571620F00371C51 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3B4CCB2571620F00371C51 /* Persistence.swift */; };
+		0C3B4CD1257164B200371C51 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3B4CD0257164B200371C51 /* RecordView.swift */; };
+		0C3B4CD62571798500371C51 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3B4CD52571798500371C51 /* CalculatorView.swift */; };
+		0C93466F25719EF600317472 /* EditAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C93466E25719EF600317472 /* EditAddView.swift */; };
+		0C9346742571ABA200317472 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9346732571ABA200317472 /* GraphView.swift */; };
+		0C93467A2571AD9900317472 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 0C9346792571AD9900317472 /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,12 @@
 		0C3B4CB0257161D600371C51 /* PRLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PRLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C3B4CB4257161D600371C51 /* PRLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRLogUITests.swift; sourceTree = "<group>"; };
 		0C3B4CB6257161D600371C51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C3B4CC6257161E500371C51 /* PRLog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PRLog.xcdatamodel; sourceTree = "<group>"; };
+		0C3B4CCB2571620F00371C51 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		0C3B4CD0257164B200371C51 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		0C3B4CD52571798500371C51 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		0C93466E25719EF600317472 /* EditAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddView.swift; sourceTree = "<group>"; };
+		0C9346732571ABA200317472 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C93467A2571AD9900317472 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +111,12 @@
 			children = (
 				0C3B4C97257161D500371C51 /* PRLogApp.swift */,
 				0C3B4C99257161D500371C51 /* ContentView.swift */,
+				0C3B4CD52571798500371C51 /* CalculatorView.swift */,
+				0C3B4CD0257164B200371C51 /* RecordView.swift */,
+				0C9346732571ABA200317472 /* GraphView.swift */,
+				0C93466E25719EF600317472 /* EditAddView.swift */,
+				0C3B4CC5257161E500371C51 /* PRLog.xcdatamodeld */,
+				0C3B4CCB2571620F00371C51 /* Persistence.swift */,
 				0C3B4C9B257161D600371C51 /* Assets.xcassets */,
 				0C3B4CA0257161D600371C51 /* Info.plist */,
 				0C3B4C9D257161D600371C51 /* Preview Content */,
@@ -146,6 +166,9 @@
 			dependencies = (
 			);
 			name = PRLog;
+			packageProductDependencies = (
+				0C9346792571AD9900317472 /* SwiftUICharts */,
+			);
 			productName = PRLog;
 			productReference = 0C3B4C94257161D500371C51 /* PRLog.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +240,9 @@
 				Base,
 			);
 			mainGroup = 0C3B4C8B257161D500371C51;
+			packageReferences = (
+				0C9346782571AD9900317472 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 0C3B4C95257161D500371C51 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +285,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C3B4CC7257161E500371C51 /* PRLog.xcdatamodeld in Sources */,
+				0C93466F25719EF600317472 /* EditAddView.swift in Sources */,
+				0C3B4CCC2571620F00371C51 /* Persistence.swift in Sources */,
 				0C3B4C9A257161D500371C51 /* ContentView.swift in Sources */,
+				0C3B4CD1257164B200371C51 /* RecordView.swift in Sources */,
+				0C3B4CD62571798500371C51 /* CalculatorView.swift in Sources */,
 				0C3B4C98257161D500371C51 /* PRLogApp.swift in Sources */,
+				0C9346742571ABA200317472 /* GraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +612,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0C9346782571AD9900317472 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0C9346792571AD9900317472 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C9346782571AD9900317472 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		0C3B4CC5257161E500371C51 /* PRLog.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0C3B4CC6257161E500371C51 /* PRLog.xcdatamodel */,
+			);
+			currentVersion = 0C3B4CC6257161E500371C51 /* PRLog.xcdatamodel */;
+			path = PRLog.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0C3B4C8C257161D500371C51 /* Project object */;
 }
